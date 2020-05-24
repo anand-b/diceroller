@@ -15,6 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:src="@drawable/empty_dice"
+        tools:src="@drawable/dice_1"
         android:layout_marginBottom="@dimen/view_spacing_vertical"
         app:layout_constraintVertical_chainStyle="packed"/>
 

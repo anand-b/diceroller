@@ -3,3 +3,6 @@ A simple Dice Rolling App developed as a part of the [Developing Android Apps wi
 
 # Use case
 Users can click on the "Roll" button and the next dice roll appears as an image.
+
+# Screenshots
+![alt text](./screenshots/main.png "Dice Roller App - Main Activity")

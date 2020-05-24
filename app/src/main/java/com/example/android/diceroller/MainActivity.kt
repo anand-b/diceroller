@@ -5,13 +5,15 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.widget.ImageView
 import com.example.android.diceroller.databinding.ActivityMainBinding
-import com.example.android.diceroller.utils.Dice
+import com.example.android.diceroller.models.Dice
+import com.example.android.diceroller.models.FairDice
 import com.example.android.diceroller.utils.fadeIn
 import com.example.android.diceroller.utils.fadeOut
 
 class MainActivity : AppCompatActivity() {
 
-    private val dice: Dice = Dice()
+    // Dice reference to never change. The value that dice reference contains, however, can change.
+    private val dice: Dice = FairDice()
 
     companion object {
         private const val FADE_ANIMATION_DURATION_MS = 1000L
@@ -36,7 +38,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun updateDiceImage(diceImageView: ImageView) {
-        val diceImageRes = when(dice.currentValue) {
+        val diceImageRes = when(dice.value()) {
             1 -> R.drawable.dice_1
             2 -> R.drawable.dice_2
             3 -> R.drawable.dice_3

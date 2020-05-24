@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="view_spacing_vertical">20dp</dimen>
+
+
+    <dimen name="dice_value_text_size">32sp</dimen>
+</resources>
